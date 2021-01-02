@@ -1,0 +1,12 @@
+@startuml
+class Client
+interface Service{
+   +void save();
+}
+class ServiceImpl{
+  +void save();
+}
+Service <|- ServiceImpl
+Client ..> ServiceImpl
+Client ..> Service
+@enduml

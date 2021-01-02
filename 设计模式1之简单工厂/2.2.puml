@@ -1,0 +1,17 @@
+@startuml
+
+interface Service{
+   +void save();
+}
+class AServiceImpl{
+  +void save();
+}
+class Factory{
+  +Service newService();
+}
+Factory .> Service
+Factory ..> AServiceImpl
+Client .> Factory
+Client ..> Service
+Service <|- AServiceImpl
+@enduml
