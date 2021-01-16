@@ -1,0 +1,10 @@
+@startmindmap
++ JVM
+++ 内存结构
+++ 内存回收
+++ 类加载机制
+++ class文件结构
+-- 对象
+-- 内存相关
+-- JVM调优
+@endmindmap
